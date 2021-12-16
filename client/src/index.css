@@ -3,3 +3,11 @@ body {
   margin: 0;
   padding: 0;
 }
+
+
+:root {
+  --blue: #373958;
+  --orange: #DA7635;
+  --white: #FFFFFF;
+  --light_blue: #686CA1; 
+}
