@@ -1,6 +1,7 @@
+import "./style.css"
 const Skills = () => {
     return (
-        <section>
+        <section className="skills">
             <h1>Technologies</h1>
             <div className="wrapper">
                 <div className="card">
