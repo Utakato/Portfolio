@@ -3,6 +3,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    background-color: var(--blue);
+    color: var(--white)
 }
 
 nav {
@@ -10,4 +12,12 @@ nav {
     justify-content: space-around;
     align-items: center;
     gap: 2rem;
+}
+
+.logo span {
+    font-weight: 700;
+}
+
+.item {
+    cursor: pointer;
 }
