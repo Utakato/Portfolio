@@ -1,0 +1,24 @@
+.hero {
+    background-color: var(--blue);
+    color:var(--white);
+    padding: 5rem 5rem;
+}
+
+.hero span {
+    color: var(--orange)
+}
+
+.hero h1 {
+    font-size: 4rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+.hero h3 {
+    font-size : 2rem;
+    margin-top: 6rem;
+}
+#right {
+    margin-top: 2rem;
+}
