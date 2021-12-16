@@ -1,7 +1,7 @@
 const Projects = () => {
     return (
         <section className="projects">
-            <projects>
+            <div className="wrapper">
                 <div className="project">
                     <img src="" alt="" />
                     </div>
@@ -14,7 +14,7 @@ const Projects = () => {
                 <div className="project">
                     <img src="" alt="" />
                     </div>
-            </projects>
+            </div>
         </section>
     )
 }
