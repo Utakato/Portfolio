@@ -1,0 +1,22 @@
+.project img{
+    max-height: 180px;
+    max-width: 320px;
+}
+
+.projects .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem 5rem;
+}
+
+.projects {
+    background-color: var(--blue);
+}
+
+.projects h1 {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 2.5rem;
+    color: var(--white)
+}
