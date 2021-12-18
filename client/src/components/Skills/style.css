@@ -22,6 +22,20 @@
     border-radius: 5px;
     font-size: 1.5rem;
     box-shadow: 0.5rem 1.5rem 2rem rgba(0,0,0,0.5);
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.8s;
+    transition-timing-function: cubic-bezier(.05,.75,.41,.66);
+}
+
+.card.visible,
+#right.visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.card.right {
+    transform: translateX(50%)
 }
 
 ul {

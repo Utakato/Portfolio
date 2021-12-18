@@ -13,7 +13,7 @@ const Skills = () => {
                         <li>CSS3</li>
                     </ul>
                 </div>
-                <div className="card">
+                <div className="card right">
                     <h3>Server-side</h3>
                     <ul>
                         <li>Node.js</li>
