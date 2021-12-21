@@ -4,7 +4,11 @@ header {
     align-items: center;
     padding: 2rem;
     background-color: var(--blue);
-    color: var(--white)
+    color: var(--white);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
 }
 
 nav {

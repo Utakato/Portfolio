@@ -6,10 +6,13 @@ const options = {
 
 export const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry =>{
-        console.log(entry)
         if(entry.isIntersecting) {
-            console.log("show")
             entry.target.classList.add("visible")
         }
     })
 }, options)
+
+
+export const SmoothScroll = element => {element.scrollIntoView({ 
+    behavior: 'smooth' 
+  })}

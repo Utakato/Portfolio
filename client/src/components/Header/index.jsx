@@ -1,13 +1,20 @@
 import "./style.css"
-
+import * as tools from "../../tools"
+import { useEffect } from "react"
 const Header = () => {
+    
+    const handleClick = (selector) => () => {
+        const target = document.querySelector(selector)
+        tools.SmoothScroll(target)
+    }
     return (
         <header>
             <div className="logo"><span>Schipor</span> Vasile</div>
             <nav>
-                <div className="item">Skills</div>
-                <div className="item">Portfolio</div>
-                <div className="item">Contact</div>
+                <div className="item" onClick={handleClick(".skills")}>Skills</div>
+                <div className="item" onClick={handleClick(".projects")}>Projects</div>
+                <div className="item" onClick={handleClick(".about")}>About</div>
+                <div className="item" onClick={handleClick(".contact")}>Contact</div>
             </nav>
         </header>
     )

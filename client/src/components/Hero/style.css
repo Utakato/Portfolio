@@ -19,6 +19,21 @@
     font-size : 2rem;
     margin-top: 6rem;
 }
-#right {
+
+.fade {
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 0.7s;
+    /* transition-timing-function:cubic-bezier(.85,.62,.46,1.42); */
+    transition-timing-function: cubic-bezier(.21,.87,.36,1.28);
+}
+
+.fade.rightH3 {
+    transform: translateX(50%);
     margin-top: 2rem;
+}
+
+.fade.visible {
+    transform: translateX(0);
+    opacity: 1;
 }
