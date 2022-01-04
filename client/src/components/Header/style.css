@@ -24,6 +24,7 @@ nav {
     font-weight: 700;
 }
 
-.item {
+.item, 
+.logo {
     cursor: pointer;
 }

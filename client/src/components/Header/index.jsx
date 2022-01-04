@@ -9,7 +9,7 @@ const Header = () => {
     }
     return (
         <header>
-            <div className="logo"><span>Schipor</span> Vasile</div>
+            <div className="logo" onClick={handleClick(".hero")}><span>Schipor</span> Vasile</div>
             <nav>
                 <div className="item" onClick={handleClick(".skills")}>Skills</div>
                 <div className="item" onClick={handleClick(".projects")}>Projects</div>
