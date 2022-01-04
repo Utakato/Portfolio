@@ -39,35 +39,4 @@ class Project extends Component {
 
 }
 
-// const Project = ({project}) => {
-//     const [show, setShow] = useState(false)
-    
-//     const openModal = () => {
-//         setShow(true)
-//     }
-
-//     const closeModal = () => {
-//         this.setShow(false)
-//     }
-
-
-
-//     const handleClick = (link) =>  () => window.open(link, "_blank")
-//     const handleDetails = () => () => {}
-
-//     return (
-//         <div className="project">
-//             <img src={`${process.env.PUBLIC_URL}/assets/images/${project.imageName}`} alt="website-preview-image" />
-//             <h3 className="project-name">{project.name}</h3>
-//             <div className="buttons-wrapper">
-//                 <div className="button" onClick={openModal}>Details</div>    
-//                 <div className="button" onClick={handleClick(project.github)}>Code</div>
-//                 <div className="button" onClick={handleClick(project.live)}>Live</div>
-//             </div>
-//             <Modal showModal={show} project={project} handleClose={closeModal}/>
-//         </div>    
-//     )
-
-// }
-
 export default Project
