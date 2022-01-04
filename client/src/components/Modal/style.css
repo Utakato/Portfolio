@@ -1,0 +1,89 @@
+.overflowHidden {
+    overflow: hidden;
+}
+.modal {
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.blur-bg {
+    filter: blur(.2rem)
+}
+
+.modal-content {
+    background-color: var(--white);
+    color: #000;
+    border-radius: 5px;
+    padding: 3rem 4rem;
+    margin: 2rem 7rem;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+}
+
+.modal-content h1 {
+    color: #000;
+    margin: 0;
+    padding: 0;
+    text-align: start;
+}
+
+.display-none {
+    display:none;
+}
+
+.display-block {
+    display:block;
+}
+
+.tech-stack {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+
+.tech-item {
+    padding: .5rem 1rem;
+    background-color: var(--blue);
+    border-radius: 5px;
+    color: var(--white)
+
+}
+
+.stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.modal-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.button.close {
+    background-color: var(--orange);
+    color: #000;
+}
+
+.button.close:hover {
+    color: var(--white)
+}
+
+.modal-content h3 {
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.details {
+    padding: 1rem 0;
+}
+
+.details-text {
+    white-space:pre-line;
+}

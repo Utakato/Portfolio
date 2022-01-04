@@ -1,0 +1,78 @@
+.project {
+    position: relative;
+    margin: 3rem 0;
+}
+
+.project img{
+    max-height: 270px;
+    max-width: 480px;
+    transition: all .5s;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0, 0.2);
+}
+
+.project:hover img {
+    box-shadow: 2rem 1rem 2rem rgba(85, 60, 60, 0.2);
+    filter: blur(.2rem);
+    opacity: .5rem;
+    transform: scale(1.1);
+    transition: all .5s;
+}
+
+.project-name {
+    margin-bottom: 0;
+    color: var(--orange);
+    position: absolute;
+    overflow: hidden;
+    transform: translateY(-50%);
+    top: 0;
+    left: 1.5rem;
+    opacity: 0;
+    transition: .5s;
+    font-size: 2rem;
+}
+
+.project:hover .project-name {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform .5s .3s, opacity .2s .3s;
+}
+
+.buttons-wrapper {
+    color: var(--white);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left:-3.35rem;
+    opacity: 0;
+    overflow: hidden;
+    transition: width .3s .1s, opacity .3s ;
+}
+
+.project:hover .buttons-wrapper {
+    width: 100%;
+    opacity: 1;
+    transition: height .5s, width .5s, opacity .2s .2s;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    color: var(--white);
+    padding: .5rem 1rem;
+    border-radius: 3px;
+    cursor:pointer;
+    transition: .15s;
+    width: 4rem;
+    font-size: 1.2rem;
+}
+
+.button:hover {
+    color: var(--orange);
+}
