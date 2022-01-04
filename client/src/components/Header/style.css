@@ -28,3 +28,7 @@ nav {
 .logo {
     cursor: pointer;
 }
+
+.item:hover {
+    color: var(--orange);
+}

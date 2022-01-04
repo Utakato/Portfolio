@@ -5,7 +5,9 @@ const Contact = () => {
         <section className="contact">
             <h1>Contact</h1>
             <div className="wrapper">
-            <div className="map"><ContactMap /></div>
+            <div className="map">
+                <ContactMap />
+            </div>
             
             <div className="contact-info">
                 <div className="info">Email: <span>vasileschipor98@gmail.com</span></div>
