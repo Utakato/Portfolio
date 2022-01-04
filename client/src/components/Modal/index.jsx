@@ -2,21 +2,25 @@ import "./style.css"
 import { useEffect } from "react";
 
 const Modal = ({showModal, project, handleClose}) => {
-    const showHideClassName = showModal ? "modal display-block" : "modal display-none";
+    
+const showHideClassName = showModal ? "modal display-block" : "modal display-none";
+    
     const handleClick = (link) => () => {window.open(link)}
-
-    useEffect(()=> {
-        showModal ? document.body.classList.add("overflowHidden") : document.body.classList.remove("overflowHidden")
-
-    }, [showModal]) // locks the scroll on background while modal is open
 
     const handleBgClick = (e) => { 
         const modalContent = document.querySelector(".modal-content")
-        if (e.target.firstChild.className === modalContent.className){
+        const clickedOutsideModal = e.target.firstChild.className === modalContent.className 
+        
+        if (clickedOutsideModal){
             handleClose()
         }
     }
-    
+
+        
+    useEffect(()=> {
+        showModal ? document.body.classList.add("overflowHidden") : document.body.classList.remove("overflowHidden")
+    }, [showModal]) // locks scrolling on background while modal is open
+
     return (
         <div className={showHideClassName} onClick={handleBgClick}>
             <div className="modal-content">
