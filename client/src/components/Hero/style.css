@@ -22,15 +22,14 @@
 
 .fade {
     opacity: 0;
-    transform: translateX(-50%);
-    transition: all 0.7s;
-    /* transition-timing-function:cubic-bezier(.85,.62,.46,1.42); */
-    transition-timing-function: cubic-bezier(.21,.87,.36,1.28);
+    transform: translateY(50%);
+    transition: all 0.7s 1s ease-out;
 }
 
 .fade.rightH3 {
-    transform: translateX(50%);
+    transform: translateY(50%);
     margin-top: 2rem;
+    transition: all 0.7s 1.5s ease-out;
 }
 
 .fade.visible {
