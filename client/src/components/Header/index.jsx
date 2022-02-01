@@ -1,6 +1,6 @@
 import "./style.css"
 import * as tools from "../../tools"
-import { useEffect } from "react"
+
 const Header = () => {
     
     const handleClick = (selector) => () => {
