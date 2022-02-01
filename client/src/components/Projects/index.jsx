@@ -9,6 +9,7 @@ const Projects = () => {
                 <Project project={projects.betterMeV2} />
                 <Project project={projects.moonshots} />
                 <Project project={projects.sapiens} />
+                <Project project={projects.ossoImobiliare}/>
             </div>
         </section>
     )

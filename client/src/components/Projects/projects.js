@@ -35,10 +35,25 @@ export const sapiens = {
 
 export const ossoImobiliare = {
     name: "Osso Imobiliare",
-    github: "",
-    live: "",
+    github: "https://github.com/Utakato/ossoimobiliare",
+    live: "https://ossoimobiliare.herokuapp.com/",
     frontEndStack : ["HTML/CSS", "EJS"],
     backEndStack : ["MongoDB","Node.js", "Python(used to fetch data from CRM API to MongoDB)"],
-    imageName : "", //TBA
-    details: "Based on a template (REALDEAL)",
+    imageName : "ossoimobiliare.png",
+    details: `This is my first web-dev project, we needed the site remade, we had no more money(paid ~800$ for a broken wordpress site - delivered in 4 months), I had some python knowledge and got the taste of programming so I started learning Web-dev and decided to make a brand new website for our business.\ 
+    \n\n\
+    On the first tought I wanted to make it from scratch with React and no design. On the second thought we needed this up and running faster than it would've taken me to build it from scratch(because I barely knew React and web-dev). So I bought an HTML template for 25$ and worked with that (created a mongoDB to store data from the CRM API, a script that ran every day to update the DB and then used EJS to display data on the site.)\
+    \n\n\
+    I've replaced most of the images that we had on the website with placeholders. I've also made some updates to the DB to replace sensible information.\
+    \n\n\
+    Some of the custom parts that I've made:\n
+    - Agent Modal;\n
+    - Leaflet.js maps with circle location\n
+    - Filters\n
+    - Sort\n
+    - 'Alege zona'\n
+    - Customized search bar on home page\n
+    You can see the difference by comparing it to realdeal theme which you can find here: \n
+    http://preview.themeforest.net/item/realdeal-responsive-real-estate-html-template/full_screen_preview/25571499?_ga=2.171040992.1143198555.1643118035-489175286.1643118035 \
+    `,
 }
