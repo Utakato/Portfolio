@@ -17,3 +17,21 @@
     padding-bottom: 5rem;
     position: relative;
 }
+
+@media  screen and (min-width: 1590px) {
+    .projects .wrapper {
+        gap: 6rem;
+    }
+}
+
+@media screen and  (max-width:482px) {
+    .projects .wrapper {
+        padding: 1rem 3rem
+    }
+}
+
+@media screen and  (max-width:377px) {
+    .projects .wrapper {
+        padding: 1rem 2rem
+    }
+}

@@ -76,3 +76,94 @@
 .button:hover {
     color: var(--orange);
 }
+
+@media screen and (max-width: 1200px) {
+
+    .project img{
+        max-height: 225px;
+        max-width: 400px;
+    }
+    .buttons-wrapper {
+        left: -1.5vw;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+
+    .project img{
+        max-height: 40vw;
+        max-width: 80vw;
+    }
+    
+    .buttons-wrapper {
+        top: 3vw;
+        left: 0;
+        flex-direction:column;
+    }
+
+    .button {
+        width: 60%;
+        font-size: 2.5rem;
+    }
+
+    .project-name {
+        left: 0;
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .project-name {
+        font-size: 2.5rem;
+    }
+
+    .button {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .project:hover .project-name {
+        opacity: 0;
+    }
+
+    .buttons-wrapper {
+        top: 0;
+        gap: 1.5rem;
+    }
+
+    .button {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:540px){
+    .button {
+        font-size: 1.5rem;
+    }
+    .buttons-wrapper {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width:410px){
+    .button {
+        font-size: 1.5rem;
+    }
+    .buttons-wrapper {
+        gap: .5rem;
+    }
+}
+
+@media screen and (max-width:370px){
+    .button {
+        font-size: 1.2rem;
+    }
+    .buttons-wrapper {
+        gap: .3rem;
+    }
+}
