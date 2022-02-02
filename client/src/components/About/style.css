@@ -52,3 +52,13 @@
     color: var(--orange);
     font-weight: 700;
 }
+
+@media screen and (max-width:1000px) {
+    .about .card,
+    #right {
+        align-self: center;    
+        font-size: 1rem;
+    }
+
+
+}
