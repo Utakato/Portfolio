@@ -1,0 +1,59 @@
+/* sidebar Nav */
+
+.navbar {
+    position: relative;
+}
+  
+.navbar button {
+    all: unset;
+    position: fixed;
+    right: 40px;
+    top: 25px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    color: var(--orange)
+}
+  
+.menuNav {
+    overflow-y: scroll;
+    list-style: none;
+    position: fixed;
+    top: 0;
+    background: var(--light_blue);
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    max-width: 290px;
+    z-index: 1;
+    transition: width .3s ease-out;
+    margin-top: 0;
+
+}
+  
+.menuNav.showMenu {
+    width: 100%;
+    transition: width .3s ease-out;
+}
+
+.menuNav li:hover {
+    color: var(--orange);
+    cursor: pointer;
+}
+  
+a {
+    display: block;
+    padding: 10px 40px;
+    text-decoration: none;
+    color: #3fffd2;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+  
+.menuNav li:first-child {
+    margin-top: 7rem;
+}
