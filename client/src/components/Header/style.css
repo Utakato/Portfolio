@@ -33,6 +33,12 @@ nav {
     color: var(--orange);
 }
 
+@media screen and (min-width:1250px) {
+    header {
+        width: 95vw;
+    }
+}
+
 
 @media screen and (max-width:482px) {
     header {
