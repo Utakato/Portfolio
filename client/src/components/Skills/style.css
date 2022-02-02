@@ -18,6 +18,7 @@
 .card {
     background-color: var(--blue);
     padding: 1rem 2rem;
+    width: 170px;
     color: var(--white);
     border-radius: 5px;
     font-size: 1.5rem;
@@ -48,5 +49,19 @@ li {
     line-height: 2;
     font-weight: 400;
     font-size: 1.4rem;
+    
+}
+
+
+@media screen and (max-width: 650px) {
+    .wrapper {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .card {
+        text-align: center;
+    }
+
     
 }
