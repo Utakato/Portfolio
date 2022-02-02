@@ -7,6 +7,15 @@ const ContactMap = () => {
             <MapContainer 
                 center={clujNapoca} 
                 zoom={6} 
+                zoomControl={false}
+                doubleClickZoom= {false}
+                closePopupOnClick= {false} 
+                dragging= {false}
+                zoomSnap= {false} 
+                zoomDelta= {false} 
+                trackResize= {false}
+                scrollWheelZoom= {false}
+                touchZoom={false}
                 style={{ width: '100%', height: '300px'}}
             >
                 <TileLayer
