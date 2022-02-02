@@ -10,7 +10,8 @@
     box-shadow: 0.5rem 0.5rem 1rem rgba(0,0,0, 0.2);
 }
 
-.project:hover img {
+.project:hover img,
+.project:active img {
     box-shadow: 2rem 1rem 2rem rgba(85, 60, 60, 0.2);
     filter: blur(.2rem);
     opacity: .5rem;
@@ -31,7 +32,8 @@
     font-size: 2rem;
 }
 
-.project:hover .project-name {
+.project:hover .project-name,
+.project:active .project-name {
     transform: translateY(0);
     opacity: 1;
     transition: transform .5s .3s, opacity .2s .3s;
@@ -53,7 +55,9 @@
     transition: width .3s .1s, opacity .3s ;
 }
 
-.project:hover .buttons-wrapper {
+.project:hover .buttons-wrapper,
+.project:active .buttons-wrapper {
+
     width: 100%;
     opacity: 1;
     transition: height .5s, width .5s, opacity .2s .2s;
@@ -73,7 +77,8 @@
     font-size: 1.2rem;
 }
 
-.button:hover {
+.button:hover,
+.button:active {
     color: var(--orange);
 }
 
@@ -127,7 +132,8 @@
 }
 
 @media screen and (max-width:600px) {
-    .project:hover .project-name {
+    .project:hover .project-name,
+    .project:active .project-name {
         opacity: 0;
     }
 
