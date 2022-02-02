@@ -1,7 +1,7 @@
 .hero {
     background-color: var(--blue);
     color:var(--white);
-    padding: 5rem 5rem;
+    padding: 5rem 7rem;
 }
 
 .hero span {
@@ -13,6 +13,7 @@
 }
 
 .hero h2 {
+    margin-top: 5rem;
     font-size: 2.5rem;
 }
 .hero h3 {
@@ -35,4 +36,57 @@
 .fade.visible {
     transform: translateX(0);
     opacity: 1;
+}
+
+
+@media screen and (max-width: 800px) {
+    .hero {
+        padding: 5rem 4rem;
+    }
+    
+}
+
+@media screen and (max-width: 482px) {
+    .hero {
+        padding: 5rem 3rem;
+    }
+    .hero h1 {
+        font-size: 4rem;
+    }   
+
+    .hero h2 {
+        margin-top: 3rem;
+        font-size: 2.5rem;
+    }
+    .hero h3 {
+        font-size : 2rem;
+        margin-top: 6rem;
+    }
+    
+}
+
+@media screen and (max-width: 418px) {
+    
+    .hero h1 {
+        font-size: 3.5rem;
+    }   
+
+    .hero h2 {
+        margin-top: 3rem;
+        font-size: 2rem;
+    }
+    .hero h3 {
+        font-size : 1.5rem;
+        margin-top: 6rem;
+    }
+}
+
+@media screen and (max-width: 377px) {
+    .hero {
+        padding: 5rem 2rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }  
 }
