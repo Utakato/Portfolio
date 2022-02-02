@@ -1,5 +1,7 @@
 import "./style.css"
 import * as tools from "../../tools"
+import Navbar from "../Navbar"
+
 
 const Header = () => {
     
@@ -7,15 +9,11 @@ const Header = () => {
         const target = document.querySelector(selector)
         tools.SmoothScroll(target)
     }
+
     return (
         <header>
             <div className="logo" onClick={handleClick(".hero")}><span>Schipor</span> Vasile</div>
-            <nav>
-                <div className="item" onClick={handleClick(".skills")}>Skills</div>
-                <div className="item" onClick={handleClick(".projects")}>Projects</div>
-                <div className="item" onClick={handleClick(".about")}>About</div>
-                <div className="item" onClick={handleClick(".contact")}>Contact</div>
-            </nav>
+            <Navbar />
         </header>
     )
 }
