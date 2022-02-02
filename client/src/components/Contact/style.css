@@ -1,5 +1,6 @@
 .map {
     width: 500px;
+    z-index: 500;
 }
 
 .wrapper {
@@ -33,4 +34,11 @@
 
 .info span {
     color:var(--orange)
+}
+
+
+@media screen and (max-width: 1100px){
+    .map {
+        width: 300px;
+    }
 }

@@ -1,13 +1,28 @@
+import { useState } from "react"
 import ContactMap from "../ContactMap"
 import "./style.css"
 const Contact = () => {
+    const [isSmallScreen, setIsSmallScreen] = useState(window.matchMedia("(max-width: 800px)"))
+
+    function smallScreen(mediaQuery) {
+        if (mediaQuery.matches) { 
+            setIsSmallScreen(true)
+            console.log("Works")
+        } else {
+            setIsSmallScreen(false)    
+        }
+      }
+      
+  var mediaQuery = window.matchMedia("(max-width: 800px)")
+  mediaQuery.addEventListener("change",smallScreen)
     return (
         <section className="contact">
             <h1>Contact</h1>
             <div className="wrapper">
-            <div className="map">
-                <ContactMap />
-            </div>
+            {!isSmallScreen && 
+                <div className="map">
+                    <ContactMap />
+                </div>}
             
             <div className="contact-info">
                 <div className="info">Email: <span>vasileschipor98@gmail.com</span></div>
