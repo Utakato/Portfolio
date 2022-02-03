@@ -35,9 +35,28 @@ nav {
 
 /* Responsive Style */
 
-@media screen and (min-width:1250px) {
+@media screen and (min-width:3200px) and (max-width:4200px){
     header {
-        width: 95vw;
+        width: 98vw;
+    }
+}
+
+
+@media screen and (min-width:2100px) and (max-width:3200px) {
+    header {
+        width: 96vw;
+    }
+}
+
+@media screen and (min-width:1600px) and (max-width:2100px){
+    header {
+        width: 94vw;
+    }
+}
+
+@media screen and (min-width:1250px) and (max-width: 1600px) {
+    header {
+        width: 92vw;
     }
 }
 
