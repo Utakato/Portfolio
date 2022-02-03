@@ -33,6 +33,8 @@ nav {
     color: var(--orange);
 }
 
+/* Responsive Style */
+
 @media screen and (min-width:1250px) {
     header {
         width: 95vw;

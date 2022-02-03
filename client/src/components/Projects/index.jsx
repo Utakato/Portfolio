@@ -1,6 +1,7 @@
 import "./style.css"
 import * as projects from "./projects"
 import Project from "../Project"
+
 const Projects = () => {
     return (
         <section className="projects">

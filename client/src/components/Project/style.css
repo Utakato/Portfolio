@@ -57,7 +57,6 @@
 
 .project:hover .buttons-wrapper,
 .project:active .buttons-wrapper {
-
     width: 100%;
     opacity: 1;
     transition: height .5s, width .5s, opacity .2s .2s;
@@ -82,12 +81,15 @@
     color: var(--orange);
 }
 
+/* Responsive Style */
+
 @media screen and (max-width: 1200px) {
 
     .project img{
         max-height: 225px;
         max-width: 400px;
     }
+
     .buttons-wrapper {
         left: -1.5vw;
     }
@@ -122,6 +124,7 @@
 }
 
 @media screen and (max-width: 800px) {
+    
     .project-name {
         font-size: 2.5rem;
     }
@@ -132,6 +135,7 @@
 }
 
 @media screen and (max-width:600px) {
+    
     .project:hover .project-name,
     .project:active .project-name {
         opacity: 0;
@@ -148,27 +152,33 @@
 }
 
 @media screen and (max-width:540px){
+    
     .button {
         font-size: 1.5rem;
     }
+
     .buttons-wrapper {
         gap: 1rem;
     }
 }
 
 @media screen and (max-width:410px){
+    
     .button {
         font-size: 1.5rem;
     }
+    
     .buttons-wrapper {
         gap: .5rem;
     }
 }
 
 @media screen and (max-width:370px){
+    
     .button {
         font-size: 1.2rem;
     }
+    
     .buttons-wrapper {
         gap: .3rem;
     }

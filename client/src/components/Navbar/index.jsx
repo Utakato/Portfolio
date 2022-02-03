@@ -18,19 +18,13 @@ const Navbar = () => {
     }
 
     function smallScreen(mediaQuery) {
-        if (mediaQuery.matches) {
-            setIsSmallScreen(true)
-        } else {
-            setIsSmallScreen(false)    
-        }
-      }
+        mediaQuery.matches ? setIsSmallScreen(true) : setIsSmallScreen(false)
+    }
       
-  var mediaQuery = window.matchMedia("(max-width: 800px)")
-  mediaQuery.addEventListener("change",smallScreen)
+    let mediaQuery = window.matchMedia("(max-width: 800px)")
+    mediaQuery.addEventListener("change",smallScreen)
     
-
-
-  return isSmallScreen ? 
+    return isSmallScreen ? 
         <nav className="navbar">
             <button onClick={handleToggle}>{navbarOpen ? <i class="fas fa-times fa-2x"></i>: <i class="fas fa-bars fa-2x"></i>}</button>
             <ul className={`menuNav ${navbarOpen? "showMenu" : ""}`}>

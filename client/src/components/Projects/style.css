@@ -18,6 +18,8 @@
     position: relative;
 }
 
+/* Responsive Style */
+
 @media  screen and (min-width: 1590px) {
     .projects .wrapper {
         gap: 6rem;

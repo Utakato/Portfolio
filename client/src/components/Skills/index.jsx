@@ -1,15 +1,14 @@
 import "./style.css"
 import { observer} from "../../tools"
 import { useEffect } from "react"
+
 const Skills = () => {
-    
     // Adds transition to cards.
     useEffect(() => {
         const cards = document.querySelectorAll(".card")
         cards.forEach(card => {
             observer.observe(card)
-        })
-        
+        })  
     })
 
     return (

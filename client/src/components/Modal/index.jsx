@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const Modal = ({showModal, project, handleClose}) => {
     
-const showHideClassName = showModal ? "modal display-block" : "modal display-none";
+    const showHideClassName = showModal ? "modal display-block" : "modal display-none";
     
     const handleClick = (link) => () => {window.open(link)}
 
@@ -29,17 +29,17 @@ const showHideClassName = showModal ? "modal display-block" : "modal display-non
                     <div className="front-stack">
                         <h3>Front-end:</h3>
                         <div className="stack">
-                        {project.frontEndStack.map(item => {
-                            return <div className="tech-item">{item}</div>
-                        })}
+                            {project.frontEndStack.map(item => {
+                                return <div className="tech-item">{item}</div>
+                            })}
                         </div>
                     </div>
                     <div className="back-stack">
                         <h3>Back-end:</h3>
                         <div className="stack">
-                        {project.backEndStack.map(item => {
-                            return <div className="tech-item">{item}</div>
-                        })}
+                            {project.backEndStack.map(item => {
+                                return <div className="tech-item">{item}</div>
+                            })}
                         </div>
                     </div>
                 </div>

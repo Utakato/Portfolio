@@ -1,5 +1,3 @@
-/* sidebar Nav */
-
 .navbar {
     position: relative;
 }
@@ -19,24 +17,23 @@
 }
   
 .menuNav {
+    background: var(--light_blue);
+    position: fixed;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
     overflow-y: scroll;
     list-style: none;
-    position: fixed;
     top: 0;
-    background: var(--light_blue);
     right: 0;
     bottom: 0;
     height: 100vh;
     width: 0;
-    overflow: hidden;
     max-width: 290px;
+    overflow: hidden;
     z-index: 1;
-    transition: width .3s ease-out;
     margin-top: 0;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-
+    transition: width .3s ease-out;
 }
   
 .menuNav.showMenu {
@@ -47,7 +44,6 @@
 .menuNav li {
     font-size: 2rem;
     cursor: pointer;
-
 }
 
 .menuNav li:hover,

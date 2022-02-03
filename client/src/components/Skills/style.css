@@ -2,6 +2,7 @@
     background-color: var(--white);
     padding: 2rem;
 }
+
 .skills h1 {
     text-align: center;
     font-size: 2.5rem;
@@ -52,7 +53,6 @@ li {
     
 }
 
-
 @media screen and (max-width: 650px) {
     .wrapper {
         flex-direction: column;
@@ -61,7 +61,5 @@ li {
 
     .card {
         text-align: center;
-    }
-
-    
+    }   
 }
