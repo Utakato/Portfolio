@@ -4,7 +4,7 @@ import "./style.css"
 import * as tools from "../../tools"
 
 const Navbar = () => {
-    const [isSmallScreen, setIsSmallScreen] = useState(window.matchMedia("(max-width: 800px)"))
+    const [isSmallScreen, setIsSmallScreen] = useState(window.matchMedia("(max-width: 800px)").matches)
     const [navbarOpen, setNavbarOpen] = useState(false);
     
     const handleToggle = () => {
@@ -20,7 +20,6 @@ const Navbar = () => {
     function smallScreen(mediaQuery) {
         if (mediaQuery.matches) {
             setIsSmallScreen(true)
-            console.log("Works")
         } else {
             setIsSmallScreen(false)    
         }

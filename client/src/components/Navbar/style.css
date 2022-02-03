@@ -13,7 +13,8 @@
     cursor: pointer;
 }
 
-.navbar button:hover {
+.navbar button:hover,
+.navbar button:active {
     color: var(--orange)
 }
   
@@ -32,6 +33,9 @@
     z-index: 1;
     transition: width .3s ease-out;
     margin-top: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
 
 }
   
@@ -40,9 +44,15 @@
     transition: width .3s ease-out;
 }
 
-.menuNav li:hover {
-    color: var(--orange);
+.menuNav li {
+    font-size: 2rem;
     cursor: pointer;
+
+}
+
+.menuNav li:hover,
+.menuNav li:active {
+    color: var(--orange);
 }
   
 a {

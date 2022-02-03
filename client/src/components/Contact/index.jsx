@@ -2,7 +2,7 @@ import { useState } from "react"
 import ContactMap from "../ContactMap"
 import "./style.css"
 const Contact = () => {
-    const [isSmallScreen, setIsSmallScreen] = useState(window.matchMedia("(max-width: 800px)"))
+    const [isSmallScreen, setIsSmallScreen] = useState(window.matchMedia("(max-width: 800px)").matches)
 
     function smallScreen(mediaQuery) {
         if (mediaQuery.matches) { 
