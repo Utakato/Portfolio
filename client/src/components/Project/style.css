@@ -135,6 +135,10 @@
 }
 
 @media screen and (max-width:600px) {
+
+    .project {
+        margin: 2rem 0
+    }
     
     .project:hover .project-name,
     .project:active .project-name {

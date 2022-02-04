@@ -26,6 +26,12 @@
     }
 }
 
+@media  screen and (max-width: 600px) {
+    .projects .wrapper {
+        gap: 1rem;
+    }
+}
+
 @media screen and  (max-width:482px) {
     .projects .wrapper {
         padding: 1rem 3rem
