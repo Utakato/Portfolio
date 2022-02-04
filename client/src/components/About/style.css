@@ -59,5 +59,10 @@
     #right {
         align-self: center;    
         font-size: 1rem;
+        text-align: left;
+    }
+
+    .about .wrapper {
+        padding: 2rem 3rem 5rem;
     }
 }
