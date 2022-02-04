@@ -19,7 +19,7 @@
 .card {
     background-color: var(--blue);
     padding: 1rem 2rem;
-    width: 170px;
+    width: 0;
     color: var(--white);
     border-radius: 5px;
     font-size: 1.5rem;
@@ -31,13 +31,15 @@
 }
 
 .card.visible,
-#right.visible {
+.card.right.visible {
     transform: translateX(0);
     opacity: 1;
+    width: 170px;
 }
 
 .card.right {
-    transform: translateX(50%)
+    transform: translateX(50%);
+    
 }
 
 ul {
@@ -53,6 +55,11 @@ li {
     
 }
 
+.card h3 {
+    width:100%;
+    text-align: center;
+}
+
 @media screen and (max-width: 650px) {
     .wrapper {
         flex-direction: column;
@@ -62,4 +69,27 @@ li {
     .card {
         text-align: center;
     }   
+}
+
+@media screen and (min-width: 1600px){
+    .card.visible,
+    .card.right.visible {
+        transform: translateX(0);
+        opacity: 1;
+        width: 340px;
+    }
+
+    .skils .card {
+        font-size: 2.5rem;
+    }
+
+    .card li {
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+
+    .skills h1 {
+        font-size: 3rem;
+    }
+
 }

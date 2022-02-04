@@ -20,7 +20,21 @@
 
 /* Responsive Style */
 
-@media  screen and (min-width: 1590px) {
+@media screen and (min-width:1920px) {
+    .projects h1 {
+        font-size: 3rem;
+    }
+
+    .projects .wrapper {
+        column-gap: 15rem;
+    }
+}
+
+@media  screen and (min-width: 1590px) and (max-width:1920px) {
+    .projects h1 {
+        font-size: 3rem;
+    }
+
     .projects .wrapper {
         gap: 6rem;
     }
