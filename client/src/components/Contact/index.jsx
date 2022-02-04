@@ -22,7 +22,6 @@ const Contact = () => {
 
                 <div className="contact-info">
                     <div className="info">Email: <span>vasileschipor98@gmail.com</span></div>
-                    <div className="info">Phone number: <span>07488888899</span></div>
                     <div className="info">Location: <span>Romania, Cluj-napoca</span></div>
                 </div>
             </div>
