@@ -7,7 +7,8 @@ export const moonshots = {
     frontEndStack : ["React", "Redux"],
     imageName : "Moonshots.png",
     backEndStack : ["Node.js", "Express", "MongoDB", "Python(scrappers)"],
-    details: `Moonshots is a tool I made that helps me choose crypto projects which are worth researching. My criteria for a good project is based on Product, Marketing and Community. \
+    details: `This is NOT RESPONSIVE. When I built this I thought people should only use this from a PC. (my views have changed since and a mobile version is WIP) \
+    \n\nMoonshots is a tool I made that helps me choose crypto projects which are worth researching. My criteria for a good project is based on Product, Marketing and Community. \
     \n\nMoonshots help me narrow down these project based on Community so I only look into projects that have a good community. \
     \n\nI built a python scrapper that gathers data from coinmarketcap.com and regularly updates it. Also the app is also connected to Twitter through their API to get followers data for each project.(this is running daily on a webserver).\
     \n\nI store data on a MongoDB(Atlas), I created an API to access this data in Node.js (with express and mongoose), and then used React with redux to display it on the web.  I used redux to store data received from the Node.js API and also store the query that goes the API ( offset for pagination and sort order )`,
@@ -20,7 +21,13 @@ export const betterMeV2 = {
     frontEndStack : ["React", "Redux"],
     backEndStack : ["Node.js", "Express", "MongoDB"],
     imageName : "Better-me-v2.png", 
-    details: "This is my attempt to recreate my original project 'better.me' which was a failure because I was trying to learn too many things in one project.",
+    details: `Better.me V2 is my second attempt at creating a productivity app. \
+    \n\nThe app is supposed to have a task list, a habit tracker, and a way of sorting tasks by importance with the ABCDE method. \
+    \n\nAt this point it’s just a simple task list with no back-end, just using React + Redux. \
+    \n\nThe first version (you can find it on github) failed because I was learning too many things at once : React, Redux, Mui, Node,js and MongoDB. Also it was my first “big” project after ossoimobiliare.ro. A few months later I decided to try again, but slowly and steady. \
+    \n\nThe app also has a light/dark mode which you can switch on/off by pressing the sun /moon on the top right. \
+    \n\nThe design is not mine. \
+    `,
 }
 
 export const sapiens = {
@@ -53,7 +60,6 @@ export const ossoImobiliare = {
     - Sort\n
     - 'Alege zona'\n
     - Customized search bar on home page\n
-    You can see the difference by comparing it to realdeal theme which you can find here: \n
-    http://preview.themeforest.net/item/realdeal-responsive-real-estate-html-template/full_screen_preview/25571499?_ga=2.171040992.1143198555.1643118035-489175286.1643118035 \
+    You can see the difference by comparing it to realdeal theme which you can find on github README. \n
     `,
 }
