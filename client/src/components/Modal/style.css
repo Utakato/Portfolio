@@ -62,18 +62,38 @@
 
 .modal-links {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
+.buttons-wrapper-modal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
 .button.close {
+    background-color: var(--white);
+    color: #444;
+    border: solid 1px #AAA49D;
+}
+
+#live {
     background-color: var(--orange);
-    color: #000;
+}
+
+#live:hover,
+#live:active {
+    color: var(--blue);
 }
 
 .button.close:hover,
 .button.close:active {
-    color: var(--white)
+    color: #000;
 }
 
 .modal-content h3 {

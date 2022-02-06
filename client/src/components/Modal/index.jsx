@@ -51,8 +51,10 @@ const Modal = ({showModal, project, handleClose}) => {
                     
                 </div>
                 <div className="modal-links">
-                    <div className="button" onClick={handleClick(project.live)}>Live</div>
-                    <div className="button" onClick={handleClick(project.github)}>Code</div>
+                    <div className="buttons-wrapper-modal">
+                        <div className="button" id="live" onClick={handleClick(project.live)}>Live</div>
+                        <div className="button" onClick={handleClick(project.github)}>Code</div>
+                    </div>
                     <div className="button close" onClick={handleClose}>Close</div>
                 </div>
             </div>
