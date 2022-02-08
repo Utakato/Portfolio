@@ -7,7 +7,7 @@ export const moonshots = {
     frontEndStack : ["React", "Redux"],
     imageName : "Moonshots.png",
     backEndStack : ["Node.js", "Express", "MongoDB", "Python (scrappers)"],
-    details: `This is NOT RESPONSIVE. When I built this I thought people should only use this from a PC. (my views have changed since and a mobile version is WIP) \
+    details: `If you want to see how I get this data, you can find the repo on github readme. \
     \n\nMoonshots is a tool I made that helps me choose crypto projects which are worth researching. My criteria for a good project is based on Product, Marketing and Community. \
     \n\nMoonshots help me narrow down these project based on Community so I only look into projects that have a good community. \
     \n\nI built a python scrapper that gathers data from coinmarketcap.com and regularly updates it. Also the app is also connected to Twitter through their API to get followers data for each project.(this is running daily on a webserver).\
