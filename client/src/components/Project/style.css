@@ -134,7 +134,7 @@
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:680px) {
 
     .project {
         margin: 2rem 0
@@ -150,14 +150,14 @@
         gap: 1.5rem;
     }
 
-    .button {
+    .buttons-wrapper .button {
         font-size: 2rem;
     }
 }
 
 @media screen and (max-width:540px){
     
-    .button {
+    .buttons-wrapper .button {
         font-size: 1.5rem;
     }
 
@@ -168,7 +168,7 @@
 
 @media screen and (max-width:410px){
     
-    .button {
+    .buttons-wrapper .button {
         font-size: 1.5rem;
     }
     
@@ -179,7 +179,7 @@
 
 @media screen and (max-width:370px){
     
-    .button {
+    .buttons-wrapper .button {
         font-size: 1.2rem;
     }
     
