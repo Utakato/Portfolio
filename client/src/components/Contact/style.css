@@ -35,6 +35,11 @@
     color:var(--orange)
 }
 
+.info span a {
+    all:unset;
+    cursor: pointer;
+}
+
 /* Responsive style */
 @media screen and (min-width: 1600px) {
     .contact h1 {
